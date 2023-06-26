@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.baneer { 
+     
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    z-index: 2;
+}
+
+.fauban {
+    height: 300px;
+    z-index: -1;
+    
+
+}
+
+.infoban {
+    display: flex;
+    justify-content: space-between;
+    height:300px;
+}
+#ban {
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    z-index: 0;
+    position:absolute;
+    width: 90%;
+    height: 300px;
+       
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -50px;
+    margin-left: 50px;
+    z-index: 1;
+    width: 20%;
+}
+
+#logo {
+    max-width: 100px;
+    border-radius:50%;  
+}
+
+.boutons {
+    width: 60%;    
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    margin-bottom: -20px;
+    z-index: 1;
+}
+
+.lancon {
+    margin-top: 5%;  
+    width: 20%;
+    display: flex; 
+    justify-content: center;
+    z-index: 1;
+    align-items: flex-start;
+}
+
+#connexion {
+    width:200px;   
+    background-color: white;
+    border-radius: 10px;
+}
+
+#french {
+    
+    max-width:30px;
+    height: auto;   
+}
+
+#english {
+     
+    max-width: 30px;
+    height: auto;
+}
+
+.drapeaux {
+    width: 10%;
+}
+
+#bouton1 {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+#bouton2 {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+#bouton3 {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+#bouton4 {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.promo {
+    width: 90%;
+    height: 972px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    z-index: 0;   
+}
+
+#filles {
+    width: 90%;
+    z-index: -1;
+    position: absolute;
+}
+.steam {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 1;
+    width: 100%;
+    height: 900px;
+}
+#steamf { 
+    margin-bottom: -150px; 
+    margin-right: 100px;    
+}
+
+.fondchange {
+  width: 90%; 
+  height: 972px;
+  margin: auto; 
+}
+
+#fondchange {
+    width: 90%;
+    height: 972px;
+    opacity: 0.2;
+    z-index: -1;
+    position: absolute;
+}
+
+.boutonpersos {
+    width: 90%;
+    height: 972px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    z-index: 1;
+    margin: auto;
+}
+
+#mad {
+    width: 10%;
+    height:30%;    
+    border-radius: 15px;
+}
+
+#jul {
+    width: 10%;
+    height:30%; 
+    border-radius: 15px;
+}
+
+#gra {
+    width: 10%;
+    height:30%;
+    border-radius: 15px;
+}
+
+#rub {
+    width: 10%;
+    height:30%; 
+    border-radius: 15px;
+}
+
+#so {
+    width: 10%;
+    height:30%; 
+    border-radius: 15px;
+}
+
+#be {
+    width: 10%;
+    height:30%; 
+    border-radius: 15px;
+}
+
+#er {
+    width: 10%;
+    height:30%; 
+    border-radius: 15px;
+}
+
+#ga {
+    width: 10%;
+    height:30%; 
+    border-radius: 15px;
+}
+
+.stats {
+    display: flex;
+    margin:auto;
+    width:90%;
+
+}
+
+#filles2 {
+    width:90%;
+    z-index: -1;
+    position: absolute;
+    margin: auto;
+    opacity: 0.2;
+}
+
+.imgmc {
+    width: 20%;
+}
+
+.tableau {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#titretab {
+    width: 60%;
+}
+
+.imgtwin {
+    width: 20%;
+}
+
+#chat {
+    width: 200px;
+}
+
+#twins {
+    width: 100%;
+}
+
+.steamavis {
+    width: 90%;
+    height: 972px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#her {
+    width:90%;
+    z-index: -1;
+    position: absolute;
+    margin: auto;
+    opacity: 0.5;
+}
+
+footer {
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    width: 90%;
+    height: 972px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pressteam {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-bottom: 200px;
+}
+
+#mention {
+    background-color: aqua;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 5px;
+    color: blue;
+}
+#copyright {
+    background-color: aqua;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 5px;
+    color: blue;
+}
+#contact {
+    background-color: aqua;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 5px;
+    color: blue;
+}
+
+.statbest {
+    width: 56%;
+    text-align: center;
+    text-justify: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: solid 2px black;
+}
+
+h1 {    
+    font-size: 30px;
+    color: rgb(0, 60, 255);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 86.6px 50px 0;
+    border-color: transparent #007bff transparent transparent;
+}
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 86.6px;
+    border-color: transparent transparent transparent #007bff;
+}
+
+
+
