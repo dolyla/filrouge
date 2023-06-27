@@ -11,37 +11,37 @@
     <header>
         
         <div class="baneer">
-            <img src="assets/img/ban.png" id="ban">
+            <img src="assets/img/banniere.png" id="ban">
             <div class="infoban">
                 <div class="logo">
                     <img src="assets/img/logo.jpg" id="logo"> 
                 </div>
                 <div class="boutons">
                     <div class="boutonjeu">
-                        <img src="assets/img/bouton1.png" id="bouton1">
+                        <input type="image" src="assets/img/bouton1.png" id="bouton1">
                     </div>
                     <div class="boutonperso">
-                        <img src="assets/img/bouton2.png" id="bouton2"> 
+                        <input type="image" src="assets/img/bouton2.png" id="bouton2"> 
                     </div>
                     <div class="boutonstats">
-                        <img src="assets/img/bouton3.png" id="bouton3">
+                        <input type="image" src="assets/img/bouton3.png" id="bouton3">
                     </div>
                     <div class="boutonachat">
-                        <img src="assets/img/bouton4.png" id="bouton4">
+                        <input type="image" src="assets/img/bouton4.png" id="bouton4">
                     </div>
                 </div>
                 <div class="lancon">
                     <div class="drapeaux">
                         <div class="french"></div>
-                        <img src="assets/img/french_idle.jpg" id="french" alt="">
+                        <input type="image" src="assets/img/french_idle.jpg" id="french" alt="">
                         <div class="english"></div>
-                        <img src="assets/img/english_idle.jpg" id="english" alt="">
+                        <input type="image" src="assets/img/english_idle.jpg" id="english" alt="">
                     </div>
                     <div class="connexion">
                         <div class="pseudo"></div>
                         <div class="passe"></div>
                         <div class="connexion"></div>
-                            <img src="assets/img/connexion.png" id="connexion" alt="">
+                            <input type="image" src="assets/img/connexion.png" id="connexion" alt="">
                     </div>
                 </div>
             </div>
@@ -50,9 +50,15 @@
     </header>
     <section>
         <div class="promo">
-            <img src="assets/img/i9.jpg" id="filles">
+            <div class="video">
+                <video width="90%" muted controls autoplay loop id="vid">
+                    <source src="assets/media/best.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/i9.jpg" id="filles">
+            </div>
             <div class="steam">
-                <img src="assets/img/steam.jpg" id="steamf">
+                <iframe src="https://store.steampowered.com/widget/2404390/" frameborder="0" width="646" height="190" id="steamf"></iframe>
+                <!-- <input type="image" src="assets/img/steam.jpg" id="steamf"> -->
             </div>
         </div>
     </section>
@@ -61,21 +67,21 @@
         <img src="assets/img/e67.jpg" id="fondchange">
             <div class="boutonpersos">
                 <button id="madison"></button>
-                    <img src="assets/img/madison.jpg" id="mad">
+                    <input type="image" src="assets/img/madison.jpg" id="mad">
                 <button id="julia"></button>
-                    <img src="assets/img/julia.jpg" id="jul">
+                    <input type="image" src="assets/img/julia.jpg" id="jul">
                 <button id="grace"></button>
-                    <img src="assets/img/grace.jpg" id="gra">
+                    <input type="image" src="assets/img/grace.jpg" id="gra">
                 <button id="ruby"></button>
-                    <img src="assets/img/ruby.jpg" id="rub">
+                    <input type="image" src="assets/img/ruby.jpg" id="rub">
                 <button id="sofia"></button>
-                    <img src="assets/img/sofia.jpg" id="so">
+                    <input type="image" src="assets/img/sofia.jpg" id="so">
                 <button id="elizabeth"></button>
-                    <img src="assets/img/beth.jpg" id="be">
+                    <input type="image" src="assets/img/beth.jpg" id="be">
                 <button id="erin"></button>
-                    <img src="assets/img/erin.jpg" id="er">
+                    <input type="image" src="assets/img/erin.jpg" id="er">
                 <button id="gaby"></button>
-                    <img src="assets/img/gaby.jpg" id="ga">
+                    <input type="image" src="assets/img/gaby.jpg" id="ga">
             </div>
         </div>
     </section>
@@ -116,7 +122,7 @@
                 <img src="assets/img/beststeam.png" id="steam3"> 
 
             <div class="achatsteam"></div>
-                <img src="assets/img/steam.jpg" id="steam2"> 
+            <iframe src="https://store.steampowered.com/widget/2404390/" frameborder="0" width="646" height="190" id="steam2"></iframe>
         </div>
         <div class="avis">
             <div class="titre avis"></div>
