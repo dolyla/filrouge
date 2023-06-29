@@ -8,8 +8,35 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="popup">
+        <div class="mask"></div>
+        <div class="container">
+            <div class="fondpopup">
+                <img src="assets/img/r0.jpg" id="fondpopup">
+            </div>
+            <div class="connect"></div>
+            
+            <h3>Se connecter au forum</h3>
+            <br />
+            <form name="acces" action="/forum.html" method="post" class="acces">
+              <div>
+                <label for="Pseudo">Pseudo:</label>
+                <input type="text" id="Pseudo" size="30" name="Pseudo" />
+              </div>
+              <br />
+              <div>
+                <label for="Passe">Mot de passe:</label>
+                <input type="text" id="Passe" size="30" name="Passe" />
+              </div>
+              <br />
+              <div class="boutonenvoi">
+                <input type="submit" value="Envoyer" name="Envoyer" id="envoyer" />
+              </div>
+            </form>
+            <a href="#" class="croix">&times;</a>
+        </div>
+    </div>
     <header>
-        
         <div class="baneer">
             <img src="assets/img/banniere.png" id="ban">
             <div class="infoban">
@@ -18,16 +45,16 @@
                 </div>
                 <div class="boutons">
                     <div class="boutonjeu">
-                        <input type="image" src="assets/img/bouton1.png" id="bouton1">
+                        <a href="#jeu"><img src="assets/img/bouton1.png" id="bouton1"></a>                            
                     </div>
                     <div class="boutonperso">
-                        <input type="image" src="assets/img/bouton2.png" id="bouton2"> 
+                        <a href="#perso"><img src="assets/img/bouton2.png" id="bouton2"></a> 
                     </div>
                     <div class="boutonstats">
-                        <input type="image" src="assets/img/bouton3.png" id="bouton3">
+                        <a href="#stats"><img src="assets/img/bouton3.png" id="bouton3"></a> 
                     </div>
                     <div class="boutonachat">
-                        <input type="image" src="assets/img/bouton4.png" id="bouton4">
+                        <a href="#acheter"><img src="assets/img/bouton4.png" id="bouton4"></a> 
                     </div>
                 </div>
                 <div class="lancon">
@@ -41,7 +68,7 @@
                         <div class="pseudo"></div>
                         <div class="passe"></div>
                         <div class="connexion"></div>
-                            <input type="image" src="assets/img/connexion.png" id="connexion" alt="">
+                            <a href="#" onclick="openPopup();return false;"><img src="assets/img/connexion.png" id="connexion"></a>
                     </div>
                 </div>
             </div>
@@ -62,7 +89,13 @@
             </div>
         </div>
     </section>
-    <section class="perso">
+    <section>
+        <div class="jeu" id="jeu">
+            <img src="assets/img/i9.jpg" id="filles">
+            <img src="assets/img/pres.png" id="pres">
+        </div>
+    </section>
+    <section class="perso" id="perso">
         <div class="fondchange">
         <img src="assets/img/e67.jpg" id="fondchange">
             <div class="boutonpersos">
@@ -85,7 +118,7 @@
             </div>
         </div>
     </section>
-    <section class="stats">
+    <section class="stats" id="stats">
         <img src="assets/img/i9.jpg" id="filles2">
         <div class="imgmc">
             <img src="assets/img/heroban.png" id="hero">
@@ -94,6 +127,8 @@
             <div class="titretableau"></div>
                 <img src="assets/img/stats_idle.png" id="titretab">
             <div class="statbest">
+                <h2> Les stats influencent sur le récit et les actions que vous pourrez entreprendre.</h2>
+                <br />
                 <div class="statbuddy"></div>
                     <h1>Buddy : Votre niveau d'amitié avec les autres</h1>
                     <br>
@@ -115,7 +150,7 @@
             <img src="assets/img/twins.png" id="twins"> 
         </div>
     </section>
-    <section class="steamavis">
+    <section class="steamavis" id="acheter">
         <img src="assets/img/i51.jpg" id="her">
         <div class="pressteam">
             <div class="pagesteam"></div>
@@ -163,5 +198,6 @@
             <button id="contact">CONTACTEZ-NOUS !</button>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

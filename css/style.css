@@ -10,7 +10,6 @@
     justify-content: center;
     margin: auto;
     width: 100%;
-    height: 200px;
     position: fixed;
     z-index: 2;
 }
@@ -118,7 +117,6 @@
 
 .promo {
     width: 90%;
-    height: 972px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -133,14 +131,14 @@
 .steam {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items:flex-end;
     z-index: 1;
     width: 100%;
-    height: 900px;
+    height: 972px;
 }
 #steamf { 
-    margin-bottom: -150px; 
-    margin-right: 100px;    
+    margin-right: 100px; 
+    margin-bottom: 100px;   
 }
 
 .fondchange {
@@ -217,8 +215,9 @@
 
 .stats {
     display: flex;
+    justify-content:space-between;
     margin:auto;
-    width:90%;
+    width:100%;
 
 }
 
@@ -230,33 +229,48 @@
     opacity: 0.2;
 }
 
-.imgmc {
-    width: 20%;
-}
-
 .tableau {
-    width: 60%;
+    width: 60%;    
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
 }
 
 #titretab {
-    width: 60%;
+    width: 70%;
+    margin-bottom: 30px;
+    margin: 30px;
+
 }
 
-.imgtwin {
+.imgmc {
     width: 20%;
 }
+
+#hero {
+    width: 100%;
+    height: 100%;
+    
+}
+
 
 #chat {
     width: 200px;
 }
 
+.imgtwin {
+    width: 20%;    
+}
 #twins {
-    width: 100%;
+    width: 150%;
+    height: 100%;
+    margin-left: -50%;
+        
 }
 
 .steamavis {
@@ -421,4 +435,114 @@ h2 {
     width: 100%;
 }
 
+.jeu {
+    width: 90%;
+    height: 972px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    z-index: 0;   
+}
 
+#popup{
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+#popup.open{
+	display: block;
+}
+
+#popup .mask{
+	background: black;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#popup .container{
+	position: relative;
+	background-color:#b5c2cf;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 300px;
+	height: auto;
+    border-radius: 10px;
+    background-image: url("assets/img/e67.jpg");
+	
+}
+
+#popup .container a.croix{
+	position: absolute;
+	right: 1%;
+	top:1%;
+	color: #444;
+	font-size: 30px;
+}
+
+#popup .container a.croix:hover{		
+	color: black;
+}
+
+.acces {
+    
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif, bold, Arial, Helvetica;
+    font-size: 14px;
+}
+
+.boutonenvoi {
+    display: flex;
+    justify-content: center;
+    width: 100%;      
+}
+
+#envoyer {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+div input {
+    margin-right: 10px;
+}
+
+form {
+    margin: 0 auto;
+}
+
+form input {
+    padding: 10px;
+    border: solid black 1px;
+}
+ 
+form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #0004ff;
+}
+
+h3 {
+    color: blue;
+    padding-top: 20px;
+    font-size: x-large;
+    text-align: center;
+}
+
+#fondpopup {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    position: absolute;
+}
