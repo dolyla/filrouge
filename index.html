@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tout sur B.E.S.T</title>
 </head>
 <body>
     <div id="popup">
@@ -18,7 +18,7 @@
             
             <h3>Se connecter au forum</h3>
             <br />
-            <form name="acces" action="/forum.html" method="post" class="acces">
+            <form name="acces" action="forum.html" method="get" class="acces">
               <div>
                 <label for="Pseudo">Pseudo:</label>
                 <input type="text" id="Pseudo" size="30" name="Pseudo" />
@@ -30,7 +30,7 @@
               </div>
               <br />
               <div class="boutonenvoi">
-                <input type="submit" value="Envoyer" name="Envoyer" id="envoyer" />
+                <input type="submit" value="Envoyer" name="Envoyer" id="envoyer"/>
               </div>
             </form>
             <a href="#" class="croix">&times;</a>
@@ -96,26 +96,21 @@
         </div>
     </section>
     <section class="perso" id="perso">
-        <div class="fondchange">
-        <img src="assets/img/e67.jpg" id="fondchange">
-            <div class="boutonpersos">
-                <button id="madison"></button>
-                    <input type="image" src="assets/img/madison.jpg" id="mad">
-                <button id="julia"></button>
-                    <input type="image" src="assets/img/julia.jpg" id="jul">
-                <button id="grace"></button>
-                    <input type="image" src="assets/img/grace.jpg" id="gra">
-                <button id="ruby"></button>
-                    <input type="image" src="assets/img/ruby.jpg" id="rub">
-                <button id="sofia"></button>
-                    <input type="image" src="assets/img/sofia.jpg" id="so">
-                <button id="elizabeth"></button>
-                    <input type="image" src="assets/img/beth.jpg" id="be">
-                <button id="erin"></button>
-                    <input type="image" src="assets/img/erin.jpg" id="er">
-                <button id="gaby"></button>
-                    <input type="image" src="assets/img/gaby.jpg" id="ga">
-            </div>
+        <div class="fondchange" id="fonchange">
+            <img src="assets/img/e67.jpg" id="fondchange">
+                <div class="contpers">
+                    <img src="assets/img/info.png" id="info">
+                    <div class="boutonpersos">
+                        <div class="boutpers" id="madi" onclick="showButtonDetails('madi')"><img src="assets/img/madison.jpg" id="mad"></div>
+                        <div class="boutpers" id="julia" onclick="showButtonDetails('jul')"><img src="assets/img/julia.jpg" id="jul"></div>
+                        <div class="boutpers" id="grace" onclick="showButtonDetails('gra')"><img src="assets/img/grace.jpg" id="gra"></div>
+                        <div class="boutpers" id="ruby" onclick="showButtonDetails('rub')"><img src="assets/img/ruby.jpg" id="rub"></div>
+                        <div class="boutpers" id="sofia" onclick="showButtonDetails('so')"><img src="assets/img/sofia.jpg" id="so"></div>
+                        <div class="boutpers" id="elizabeth" onclick="showButtonDetails('be')"><img src="assets/img/beth.jpg" id="be"></div>
+                        <div class="boutpers" id="erin" onclick="showButtonDetails('er')"><img src="assets/img/erin.jpg" id="er"></div>
+                        <div class="boutpers" id="gaby" onclick="showButtonDetails('ga')"><img src="assets/img/gaby.jpg" id="ga"></div>    
+                    </div>
+                </div>
         </div>
     </section>
     <section class="stats" id="stats">
@@ -127,20 +122,8 @@
             <div class="titretableau"></div>
                 <img src="assets/img/stats_idle.png" id="titretab">
             <div class="statbest">
-                <h2> Les stats influencent sur le récit et les actions que vous pourrez entreprendre.</h2>
-                <br />
-                <div class="statbuddy"></div>
-                    <h1>Buddy : Votre niveau d'amitié avec les autres</h1>
-                    <br>
-                <div class="stateducation"></div>
-                    <h1>Education : Vos connaissances générales</h1>
-                    <br>
-                <div class="statsport"></div>
-                    <h1>Sport : Votre niveau athlétique</h1>
-                    <br>
-                <div class="stattemperament"></div>
-                    <h1>Temperament : Votre caractère et la façon dont les autres vous perçoivent</h1>
-                    <br>
+                <!-- <img src="assets/img/r0.jpg" id="arrierestat"> -->
+                <img src="assets/img/stat.png" id="statbest">
             </div>
             <div class="imgrufus">
                 <img src="assets/img/chat.png" id="chat">  
@@ -161,7 +144,7 @@
         </div>
         <div class="avis">
             <div class="titre avis"></div>
-                <h1>LES AVIS DES JOUEURS</h1>
+                <img src="assets/img/avis.png" id="avis">
             <div class="bandeauavis">
                 <div class="boutongauche">
                     <button id="bgauche"></button>

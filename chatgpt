@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #perso {
+      text-align: center;
+    }
+
+    #info {
+      width: 300px;
+      height: 200px;
+      margin: 0 auto;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="perso">
+    <button id="mad" class="button">Mad</button>
+    <button id="jul" class="button">Jul</button>
+    <button id="gra" class="button">Gra</button>
+    <button id="rub" class="button">Rub</button>
+    <button id="so" class="button">So</button>
+    <button id="be" class="button">Be</button>
+    <button id="er" class="button">Er</button>
+    <button id="ga" class="button">Ga</button>
+  </div>
+
+  <div id="info">
+    <h2 id="infoTitle"></h2>
+    <p id="infoContent"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+document.addEventListener("DOMContentLoaded", function() {
+    var buttons = document.getElementsByClassName("button");
+    var info = document.getElementById("info");
+    var infoTitle = document.getElementById("infoTitle");
+    var infoContent = document.getElementById("infoContent");
+  
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function() {
+        var id = this.id;
+        var buttonStyle = window.getComputedStyle(this);
+        var buttonRect = this.getBoundingClientRect();
+        var containerRect = document.getElementById("container").getBoundingClientRect();
+        var centerX = (containerRect.width - buttonRect.width) / 2;
+        var centerY = (containerRect.height - buttonRect.height) / 2;
+  
+        // Déplacer le bouton au centre
+        this.style.position = "absolute";
+        this.style.left = centerX + "px";
+        this.style.top = centerY + "px";
+        
+        // Agrandir le bouton
+        this.style.transform = "scale(2)";
+        
+        // Masquer les autres boutons
+        for (var j = 0; j < buttons.length; j++) {
+          if (buttons[j].id !== id) {
+            buttons[j].style.display = "none";
+          }
+        }
+  
+        // Afficher la fiche correspondante
+        infoTitle.textContent = id;
+        infoContent.textContent = "Contenu de la fiche " + id;
+        info.style.display = "block";
+      });
+    }
+  });
+  

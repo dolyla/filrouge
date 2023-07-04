@@ -33,4 +33,32 @@ function closePopup(){
     
 //     return true;
 // }
+let buttons = "";
+
+ function showButtonDetails(id) {
+      buttons = document.getElementById('perso').getElementsByClassName('boutpers');
+      console.log(buttons);
+      var frame = document.getElementById('fonchange');
+
+      // Cacher tous les boutons sauf celui cliqué
+      for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].id !== id) {
+          buttons[i].style.display = 'none';
+        }
+      }
+
+      // Déplacer et agrandir le bouton cliqué
+      var boutpers = document.getElementById(id);
+      boutpers.style.position = 'absolute';
+      boutpers.style.left = '50%';
+      boutpers.style.top = '50%';
+      boutpers.style.transform = 'translate(-50%, -50%)';
+      boutpers.style.width = '200px';
+      boutpers.style.height = '60px';
+
+      // Afficher la fiche correspondante dans le cadre
+      frame.style.backgroundImage = url('./assets/img/' + id + '.jpg');
+    }
+
+  
 

@@ -155,62 +155,74 @@
     position: absolute;
 }
 
-.boutonpersos {
-    width: 90%;
-    height: 972px;
+.contpers {
+    width: 100%;
+    z-index: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;   
+    align-items: center;
+    justify-content: center;
+}
+
+#info {
+    width: 30%;
+}
+
+.boutonpersos {
+    width: 100%;
+    height: 972px;
+    display: flex; 
+    align-items: center;       
     z-index: 1;
     margin: auto;
 }
 
-#mad {
-    width: 10%;
-    height:30%;    
+.boutpers {
+    width: 12%;
+    height:30%;
     border-radius: 15px;
+    margin: auto;
+    display: flex;
+    
+}
+
+#mad {
+    width: 100%; 
+    border-radius: 5px;   
 }
 
 #jul {
-    width: 10%;
-    height:30%; 
-    border-radius: 15px;
+    width: 100%;  
+    border-radius: 5px;  
 }
 
 #gra {
-    width: 10%;
-    height:30%;
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 #rub {
-    width: 10%;
-    height:30%; 
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 #so {
-    width: 10%;
-    height:30%; 
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 #be {
-    width: 10%;
-    height:30%; 
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 5px; 
 }
 
 #er {
-    width: 10%;
-    height:30%; 
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 #ga {
-    width: 10%;
-    height:30%; 
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .stats {
@@ -231,7 +243,6 @@
 
 .tableau {
     width: 60%;    
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,8 +252,25 @@
     
 }
 
+#arrierestat {
+    z-index: 0;
+    width: 30%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.statbest {
+    display: flex;
+    width: 100%;
+}
+
+#statbest{
+    width: 100%;
+    z-index: 1;
+}
+
 #titretab {
-    width: 70%;
+    width: 50%;
     margin-bottom: 30px;
     margin: 30px;
 
@@ -271,6 +299,10 @@
     height: 100%;
     margin-left: -50%;
         
+}
+
+#avis {
+    width: 70%;
 }
 
 .steamavis {
@@ -546,3 +578,254 @@ h3 {
     z-index: -1;
     position: absolute;
 }
+
+.boutonsadmin {
+    width: 60%; 
+    display: flex;         
+    justify-content:flex-start;
+    align-items: flex-end;
+    margin-bottom: -20px;
+    z-index: 1;
+    margin-left: -200px;
+}      
+      
+#boutonadmin {
+    background-color: rgb(21, 178, 240);
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+#boutonforum {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+#fillesfond {  
+        width: 90%;      
+        z-index: -1;
+        position: absolute;
+        opacity: 0.2;     
+}
+
+.intforum {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.contour {
+    width: 90%;
+    height: 90%;
+    border: solid black 1px;
+    margin-top: 60px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.tableauadmin {
+    width: 60%;
+    border: solid black 1px;
+    height: 70%;
+    margin: auto; 
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    background-color: white;
+}
+
+.boutadmin {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+
+
+#listutil {
+    padding: 3%;
+    font-weight: 700;
+    color: blue;
+    background-color: #00ccff;
+    border-radius: 50px;
+    border: solid black 1px;
+}
+
+#newsletter {
+    padding: 3%;
+    font-weight: 700;
+    color: blue;
+    background-color: white;
+    border-radius: 50px;
+    border: solid black 1px;
+}
+
+.tabutil{
+    padding: 3%;
+    width: 90%;
+    border: solid black 1px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;   
+}
+
+.fiche1 {
+   width: 20%;
+   margin: auto;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+   
+}
+
+.fiche2 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+.fiche3 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiche4 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiche5 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiche6 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiche7 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiche8 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiche9 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiche10 {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.boutactionforum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#ajouterutil {
+    margin: 20px;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+#supputil {
+    margin: 20px;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+#droits {
+    margin: 20px;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+#profilm {
+    width: 40px;
+}
+
+.modprof {
+    display: flex;
+    width: 50%;
+}
+
